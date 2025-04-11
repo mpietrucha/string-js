@@ -1,0 +1,36 @@
+{
+    "name": "@mpietrucha/string",
+    "version": "0.0.1",
+    "repository": "mpietrucha/string-js",
+    "license": "MIT",
+    "author": {
+        "name": "Michał Pietrucha",
+        "email": "michal.pietrucha@off-site.pl"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "unbuild",
+        "dev": "unbuild --watch",
+        "format": "prettier . --write --ignore-unknown"
+    },
+    "prettier": "@mpietrucha/prettier",
+    "dependencies": {
+        "@mpietrucha/function": "^0.0.2",
+        "lodash-es": "^4.17.21"
+    },
+    "devDependencies": {
+        "@mpietrucha/prettier": "^1.0.0",
+        "unbuild": "^3.5.0"
+    }
+}

@@ -1,5 +1,5 @@
-import { isString } from 'lodash-es'
 import { useConfirm, useNegate } from '@mpietrucha/function'
+import { isString } from 'lodash-es'
 
 export const is = useConfirm(isString)
 
